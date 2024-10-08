@@ -1,0 +1,761 @@
+character ,id,type,sex,age
+Netflix,netflix,4,na,na
+THTH,thth,3,na,na
+THTH 2023,thth_2023,2,na,na
+Samira Diasso,sadi,1,1,23
+Marco Cali,maca,1,2,26
+Dennis Drömer,dedo,1,2,34
+Onyi Alaike,onal,1,1,26
+Furkan Akkaya,fuak,1,2,22
+Sophie Lorra,solo,1,1,26
+Anna Strigl,anst,1,1,26
+Oliver Nunez,olnu,1,2,29
+Kevin Nije,keni,1,2,27
+Fabio Falconieri,fafa,1,2,27
+Laura Muro,lamu,1,1,35
+ Emely Hüffer,emhu,1,1,27
+Tobias Klein,tokl,2,2,28
+Pro7/sat1,pro7_sat1,4,na,na
+The Beauty and the Nerd,tbatn,3,na,na
+TBATN 2024,tbatn_2024,2,na,na
+Salvatore Vassallo,savas,1,2,30
+Shelly Schmidt,shsc,1,1,25
+Babu,babu,1,1,30
+Nelly Schwarz,nesc,1,1,22
+Vanessa,vane,1,1,20
+Christin Okpara,chok,1,1,28
+Collin Seibt,cose,1,2,22
+Joelle,joel,1,1,21
+Sam,sam,1,2,24
+Kilian,kili,1,2,23
+Pierre,pier,1,2,29
+Mike,mike1,1,2,24
+Kris Unono,krun,1,2,25
+Daniel,danie,1,2,23
+TBATN 2023,tbatn_2023,2,na,na
+Setty Mois,semo,1,1,24
+Natascha Beil,nabe,1,1,32
+Jules Wohlgemuth,juwo,1,1,27
+Selina,seli,1,1,22
+Brenda,bren,1,1,19
+Beverly ,beve,1,1,30
+Chris Broy,chbr,1,2,34
+Stefan ,stef,1,2,30
+Florian,flor,1,2,25
+Samuel,samu,1,2,26
+David,davi,1,2,23
+Marco Langhorst,mala,1,2,27
+Dominik,domi,1,2,28
+Mike,mike2,1,2,21
+Alex,alex,1,2,22
+TBATN 2021,tbatn_2021,2,na,na
+Mounia Ammar,moam,1,1,28
+Ricarda Raatz,rira,1,1,31
+Alexandra Leonhard,alle,1,1,28
+Helena Batalija,heba,1,1,26
+Cecilia Asoro,ceas,1,1,28
+Loreen Schenke,losc,1,1,24
+Wiktoria,wikt,1,1,26
+Julien Momm,jumo,1,2,32
+Teresa,tere,1,1,30
+Cao,cao,1,2,25
+Christian,chri,1,2,34
+Jeremy,jere,1,2,21
+Leonard,leon,1,2,28
+Luca,luca1,1,2,24
+Markus,markus,1,2,26
+Volker,volk,1,2,30
+TBATN 2020,tbatn_2020,2,na,na
+Annabel Anderson,anan,1,1,36
+Emmy Russ,emru,1,1,25
+Kim Schiele,kisch,1,1,24
+Malin Brown,mabr,1,1,33
+Victoria Lukac,vilu,1,1,27
+Samira Klampfl,sakl,1,1,30
+Karina Iwanowna,kaiw,1,1,30
+Selina Meral,seme,1,1,33
+Elias Gamerlisi,elga,1,2,28
+Sven K.,svek,1,2,26
+Illya Kuchenko,ilku,1,2,25
+Julien,juli,1,2,36
+Sven L.,svel,1,2,28
+Jennifer,jenn,1,1,37
+Dion,dion,1,2,34
+Flamur,flam,1,2,30
+Bachelor,ba,3,na,na
+Bachelor 2020,ba_2020,2,na,na
+Bachelor 2021,ba_2021,2,na,na
+Bachelor 2022,ba_2022,2,na,na
+Bachelor 2023,ba_2023,2,na,na
+Bachelor 2024,ba_2024,2,na,na
+Anna Mildenberger,anmi,1,1,31
+Wioleta Psiuk,wips,1,1,33
+Birgit Schenkermayr,bisc,1,1,31
+Denise-Jessica König,deko,1,1,31
+Desiree Zurga,dezu,1,1,31
+Linda Reschke,lire,1,1,28
+Diana Kaloev,dika,1,1,26
+Isabelle Pallmann,ispa,1,1,32
+Laureen Pallmann,lapa,1,1,32
+Leah Marie Kruse,lekr,1,1,27
+Natali Vrtkovska,navr,1,1,28
+Jennifer Rath,jera,1,1,28
+Jenny-Fleur Kuiper,jeku,1,1,30
+Jenny Schneider,jesc,1,1,30
+Jenny Thiede,jeth,1,1,36
+Judith Diaz Caballero,juca,1,1,32
+Michèle de Roos,miro,1,1,28
+Jessica Brauns,jebr,1,1,33
+Rebecca Elisa Hüttemann,rehu,1,1,30
+Vanessa Guida,vagu,1,1,31
+Jenny-Jasmin Krause-Wegner ,jewe,1,1,29
+Sebastian Preuss,sepr,1,2,34
+Niko Griesert,nigr,1,2,34
+Anna Corcelli,anco,1,1,33
+Debora Goulart,dego,1,1,27
+Esther Kobelt,esko,1,1,25
+Hannah Kerschbaumer,hake,1,1,31
+Jacqueline Bikmaz,jabi,1,1,35
+Jaqueline Siegle,jasieg,1,1,26
+Karina Wagner,kawa,1,1,27
+Kim-Denise Lang,kila,1,1,26
+Kim Virginia Hartung,kiha,1,1,28
+Laura Stella Bühre,labu,1,1,24
+Linda-Caroline Nobat,lino,1,1,29
+Maria Chatzinikolau,mach,1,1,28
+Melissa Lindner,meli,1,1,30
+Michelle Gwozdz,migw,1,1,29
+Nadine Ackermann,naac,1,1,27
+Nina Röber,niro,1,1,23
+Nara Lob,nalo,1,1,34
+Stefanie Desiree Gherega,stde,1,1,30
+Stephie Stark,ststa,1,1,28
+Vivien Fabian-Offelmann,viof,1,1,30
+Dominik Stuckmann,dost,1,2,31
+Anna Rossow,anros,1,1,35
+Bella Otyakovoskiy,beot,1,1,26
+Bobette Landu,bola,1,1,28
+Chiara Madonna,chma,1,1,26
+Christina Aurora,chau,1,1,32
+Christina Nicolardi,chni,1,1,29
+Christina Rusch,chru,1,1,25
+Claudia Leitner,clle,1,1,26
+Elina Schuster ,elsc,1,1,27
+Emily van Strasser,emst,1,1,25
+Franziska Temme,frte,1,1,28
+Giannina Parilla,gipa,1,1,24
+Irina Zeiser,irze,1,1,31
+Jana-Maria Herz,jahe,1,1,31
+Jenny Chong,jech,1,1,24
+Josephine Fischer,jofi,1,1,27
+Lara Honner ,laho,1,1,25
+Natalie Dlabolova,nadl,1,1,26
+Nele Wüstenberg,newu,1,1,30
+Susanna Bouchain,subo,1,1,29
+Valeria Peres Cortez,vape,1,1,24
+Vivian Boesveld,vibo,1,1,30
+Yasmin Vogt,yavo,1,1,25
+David Jackson,daja,1,2,33
+Alyssa Chaplin,alch,1,1,36
+Angelina Utzeri,anut,1,1,29
+Chiara Dülberg,chdu,1,1,27
+Colleen Schneider,cosc,1,1,28
+Dahwi Lim,dali,1,1,24
+Danielle Hein,dahe,1,1,29
+Fiona Bliedtner,fibl,1,1,30
+Giovanna Langhorst,gila,1,1,28
+Henriette Kibat-Koops,heko,1,1,26
+Jana Nickel,jani,1,1,28
+Lisa Mieschke,limi,1,1,33
+Lisa Roth,liro,1,1,28
+Maike Ruten,marut,1,1,26
+Manina Schriever ,maschr,1,1,31
+Mariam Beshai,mabe,1,1,31
+Nevin ,nevi,1,1,31
+Pamela Ghazal,pagh,1,1,26
+Rebecca Ries,reri,1,1,29
+Saskia ,sask,1,1,30
+Tamara Nehrbass,tane,1,1,30
+Xenia Maria,xema,1,1,31
+Yolanda Lang,yola,1,1,27
+Sebastian Klaus,sekl,1,2,35
+Dennis Gries,degr,1,2,30
+Anna Lorenz,anlo,1,1,27
+Anna Wiemer ,anwi,1,1,30
+Annika Polay,anpo,1,1,30
+Bianca Hofmann,biho,1,1,23
+Brenda Ayo,bray,1,1,26
+Eva Thümling,evth,1,1,28
+Fabienne Aline Schulte,faal,1,1,32
+Freya Theodora,frth,1,1,25
+Gina Walser,giwa,1,1,31
+Ina,ina,1,1,28
+Jennifer Koschyk,jeko,1,1,24
+Jessica Bahn,jeba,1,1,26
+Katharina Geretschuchin,kage,1,1,28
+Kim Komnenic,kiko,1,1,30
+Kim-Yva Herz,kihe,1,1,29
+Larissa Katharina Schulte,lasc,1,1,30
+Laura Boshe-Plois,labo,1,1,27
+Laura Dall`Osteria,lada,1,1,28
+Laura S.,laus,1,1,23
+Lavinia ,lavi,1,1,31
+Leonie ,leoni,1,1,28
+Lisa Glor,ligl,1,1,28
+Lisa W.,lisl,1,1,35
+Larissa Korac,lako,1,1,29
+Jasmin,jasm,1,1,26
+Nadia Gueli,nagu,1,1,26
+Rebecca Arabella Xenia Hertlein,rear,1,1,27
+Selig Bozkurt,sebo,1,1,26
+Vivien Mafalda,vima,1,1,29
+Stephanie,step,1,1,28
+Dating Naked,dn,3,na,na
+Dating Naked 2023,dn_2023,2,na,na
+Dating Naked 2024,dn_2024,2,na,na
+Meike Emonts,meem,1,1,33
+Thiemo Lörtscher,thlo,1,2,27
+Valeria ,vale,1,1,23
+Venance Amwame,veam,1,1,29
+Kathi Kess,kake,1,1,32
+Costina Munteanu,comu,1,1,35
+Stella,stel,1,1,22
+Selina,selin,1,1,29
+Mario Kleinermanns,makl,1,2,27
+Wilson Paca,wipa,1,2,27
+Tim,tim,1,2,26
+Pascal,pasc,1,2,33
+Ashley Akub,asak,1,2,25
+Alexander Koscielski,alko,1,2,28
+Emma,emma1,1,1,20
+Alicia ,alic,1,1,30
+Mark,mark,1,2,26
+Alexander ,alexa,1,2,na
+Liliana,lili,1,1,31
+Phillip Burggraf,phbu,1,2,21
+Anny Marry,anma,1,1,30
+Peter Kujan,peku,1,2,26
+Marie,mari,1,1,22
+Lex,lex,1,2,34
+Fabio De Pasquale ,fapa,1,2,29
+Lena Goldstein,lego,1,1,22
+Jaqueline Siemsen,jasi,1,1,34
+Marija,marij,1,1,na
+Angie Teubner,ante,1,1,32
+Zoey Saflekou,zosa,1,1,26
+Jenny,nalo,1,1,na
+Sam Rise,sari,1,2,27
+Gian Luca Ruf,giru,1,2,na
+William Lopes de Sousa,wiso,1,2,35
+Jan Sokolowsky,jaso,1,2,35
+Niklas,nikl,1,2,na
+Shirley Hermanick,shhe,1,2,na
+Lisa ,lisa,1,1,22
+Tomek,tome,1,2,23
+Matthias Richter,maric,1,2,28
+Janine Zerres,jaze,1,1,29
+Roxanne Zinger,rozi,1,2,30
+Elionas Wörtwein,elwo,1,2,34
+Dino Strukar,dist,1,2,30
+Sophia Lemke,sole,1,1,26
+Patrick Specht,pasp,1,2,28
+Larissa ,lari,1,1,23
+Tina,tina,1,1,30
+Steven Hofmann,stho,1,2,35
+Kim Janina Schmidt,kisc,1,1,26
+James Audrey Dully,jadu,1,2,30
+David G.,davg,1,2,33
+Miriam Mühlbauer,mimu,1,1,24
+Ex on the Beach,eotb,3,na,na
+Ex on the Beach 2020,eotb_2020,2,na,na
+Ferhat Kampak,feka,1,2,31
+Christina Dimitriou,chdi,1,1,32
+Michelle Daniaux,mida,1,1,26
+Loreen Rahmani,lora,1,1,24
+Paul Diener,padi,1,2,37
+Olivia Limber,olli,1,1,25
+Maddi Henderson,mahen,1,1,28
+Arman Abdollahi,arab,1,2,28
+Christopher Baum,chba,1,2,29
+Betty Owczarek,beow,1,1,34
+Max Schnabel,masc,1,2,27
+Jacky Lange,jala,1,1,26
+Falko Ochsenknecht,faoc,1,2,37
+Aaron Hundhausen,aahu,1,2,25
+Ex on the Beach 2021,eotb_2021,2,na,na
+Roxy Zandstra,roza,1,1,31
+Till Adam,tiad,1,2,35
+Celina Pop,cepo,1,1,25
+Lara Badgy,laba,1,1,25
+Sandra Sicora,sasi,1,1,31
+Diogo Sangre,disa,1,2,29
+Tommy Pedroni,tope,1,2,29
+Chrissi Melikidou,chmel,1,1,25
+Chris Grey,chgr,1,2,31
+Dennys Noll,deno,1,2,32
+Finnja von Buenhove,fibu,1,1,25
+Halil Taskiran,hata,1,2,25
+Tara Tabitha,tata,1,1,31
+Vanessa Mariposa,vama,1,1,31
+Maxi Herbord,maher,1,1,27
+Hanna Annika,haan,1,1,31
+Ex on the Beach 2022,eotb_2022,2,na,na
+Jill Lange,jila,1,2,23
+Gina Beckmann,gibe,1,1,26
+Martini Rutkowski,maru,1,2,29
+Roma Schmidt,rosc,1,1,24
+Romina Mina,romi,1,1,24
+Uygar Cgn,uycg,1,2,34
+Cedric Beidinger,cebe,1,2,29
+Kamill Rutkowski,karu,1,2,25
+Leyla Lahouar,lela,1,1,28
+Lars Maucher,lama,1,2,27
+Lejla Ice,leic,1,1,26
+Anna Iffländer,anif,1,1,28
+Sebastian Ruiz,seru,1,2,35
+Can Pépé,cape,1,2,34
+Sascha Nolden,sano,1,2,29
+Mariah Bell,mabel,1,1,38
+Lorik Bunjaku,lobu,1,2,28
+Denise Hersing,dehe,1,1,28
+Marc Zimmermann,mazi,1,2,24
+Ex on the Beach 2023,eotb_2023,2,na,na
+Paulina Ljubas,palj,1,1,26
+Chiara Antonella,chan,1,1,27
+Carina Nagel,cana,1,1,24
+Kimi Jongin,kijo,1,2,26
+Gabriela Alves,gaal,1,1,24
+Roman Gross,rogr,1,2,23
+Jonny Jaspers,joja,1,2,30
+Laura Peuker,lape,1,1,24
+Maurice Furkert,mafu,1,2,27
+Anastasia Hale,anha,1,1,23
+Max Wilschrey,mawi,1,2,27
+Tobias Pietrek,topi,1,2,28
+Bella Janice,beja,1,1,23
+Germain Wolf,gewo,1,2,24
+Mike Hessel,mihe,1,2,24
+Jessica Hnatyk,jehn,1,1,22
+Dominik Brcic,dobr,1,2,27
+Ex on the Beach 2024,eotb_2024,2,na,na
+Cris Lazo,chla,1,2,28
+Markus Kathrein,maka,1,2,32
+Fabien Junge,faju,1,2,25
+Phillip Mandla,phma,1,2,28
+Ryan Wöhrl,rywo,1,2,21
+Sharon Torma,shto,1,1,25
+Natali Schmeller,nasc,1,1,26
+Sina Hornberger,siho,1,1,26
+Elissia La Lacona Pinilla,ella,1,1,26
+Nele Michaelis,nemi,1,1,25
+Christian Hauck,chha,1,2,22
+Stefanie Schaller,stsc,1,1,26
+Josua Günther,jogu,1,2,25
+Jeanine Lenz,jele,1,1,27
+Alessa Wichert,alwi,1,1,27
+Alina Winter,alwin,1,1,27
+Nadja Barbie,naba,1,1,26
+Aline Smith,alsm,1,1,32
+Paddy Nagler,pana,1,2,24
+Edda Pilz,edpi,1,1,22
+Eric Bernhard,erbe,1,2,26
+Barkin Cömert,baco,1,2,29
+Michael Klotz,mikl,1,2,25
+Juliette Lau,jula,1,1,22
+Uzoma Gabriel Lykowski Murillo,uzga,1,2,20
+Jessy Accit,jeac,1,1,23
+Donel Bernanda,dobe,1,2,22
+Abdu Karakuyu,abka,1,2,24
+Paramount+,paramount_plus,4,na,na
+Reality Shore,rs,3,na,na
+Germany Shore,gs,3,na,na
+Reality Shore Staffel 2021,rs_2021,2,na,na
+Bellydah Rivera,beri,1,1,25
+Yasin Mohamed,yamo,1,2,32
+Mia Rocco,miroc,1,1,26
+Niko Hüls,nihu,1,2,27
+Emanuel Brunner,embr,1,2,31
+Nic Schwalenberg,nisc,1,2,33
+Jessy Biggerman,jebi,1,1,27
+Danilo Cristilli,dacr,1,2,25
+Gina Alicia,gial,1,1,26
+Nara Virgilio,navi,1,1,26
+Silvio Senn,sise,1,2,28
+Anthony Briscoe,anbr,1,2,34
+Calvin Kleinen,cakl,1,2,32
+Melody Haase,meha,1,1,30
+Elena Miras,elmi,1,1,32
+Germany Shore Staffel 2022  ,gs_2022,2,na,na
+Antonia Rot,anro,1,1,24
+Elia Berthoud,albe,1,2,28
+Hatidza Suarez,hasu,1,1,27
+Jonathan Steinig,jost,1,2,29
+Julius Tkatschenko,jutk,1,2,26
+Emilia Mihailova,emmi,1,1,29
+Dana Feist,dafi,1,1,27
+Marina Luisa,malu,1,1,23
+Germany Shore Staffel 2023 ,gs_2023,2,na,na
+Abi Queen Crazy,aqc,1,1,26
+Bobby Chambertz,boch,1,2,32
+Marvin Opana,maop,1,2,27
+Max Eggerstedt,maeg,1,2,20
+Michael Schüler,misc,1,2,26
+Ramona Jst,rajs,1,1,25
+Selina Felicitas,sefe,1,1,24
+Walentina Doronina,wado,1,1,24
+Nunu Elixir,nuel,1,1,23
+Jessica Fiorini,jefi,1,1,30
+Maggie Rhee,marh,1,1,21
+Paola Parente,papa,1,1,24
+Einfach Tobi,eito,1,2,26
+Nathan Henry,nahe,1,2,27
+Bachelorette,ba_f,3,na,na
+Bachelorette 2020,ba_f_2020,2,na,na
+Bachelorette 2021,ba_f_2021,2,na,na
+Bachelorette 2022,ba_f_2022,2,na,na
+Bachelorette 2023,ba_f_2023,2,na,na
+Bachelorette 2024,ba_f_2024,2,na,na
+Melissa Damilia ,meda,1,1,28
+Christian Möller,chmo,1,2,37
+Sebastian Huget,sehu,1,2,37
+Rouven Engelhardt,roen,1,2,35
+Leander Sachers,lesa,1,2,27
+Daniel Gielniak,dagi,1,2,32
+Alex Gérard,alge,1,2,35
+Emrecan Özcan,emoz,1,2,34
+Manuel Schmidt,masch,1,2,29
+Loannis Amanatidis,loam,1,2,34
+Florian Szupories,flsz,1,2,31
+Daniel Bayer,daba,1,2,38
+Alexander Golz,algo,1,2,28
+Patrick Kohlstock,pako,1,2,33
+Daniel Mladjovic,daml,1,2,35
+Angelo Bianco,anbi,1,2,28
+Adriano Pellerito,adpe,1,2,39
+Daniel Häusle,daha,1,2,27
+Severio Patera,sepa,1,2,39
+Moritz Breuninger,mobr,1,2,36
+Maurice Grube,magr,1,2,29
+Maxime Herold,mahe,1,1,30
+Zico Banach,ziba,1,2,34
+Raphael Fasching,rafa,1,2,27
+Dario Carlucci ,daca,1,2,37
+Tony Lübke,tolu,1,2,34
+Niko Cenk Bilic,nibi,1,2,33
+Julian Dannemann,juda,1,2,30
+Max Adrio,maad,1,2,34
+Leon Knudsen,lekn,1,2,36
+Robert Janjetov,roja,1,2,29
+Maximilian Witt,mawit,1,2,28
+Niko Ulanovsky,niul,1,2,27
+Kevin Ullmann,keul,1,2,30
+Maurice Deufel,made,1,2,29
+Kenan Engirini,keen,1,2,38
+Hendrik Luczak,helu,1,2,36
+Benedikt Pfisterer,bepf,1,2,34
+Gustav Masurek,guma,1,2,35
+Dominik Bobinger,dobo,1,2,33
+Sharon Battiste,shba,1,1,32
+Alexandros Chouliaras,alcho,1,2,29
+Basti Corsten,bacor,1,2,38
+Dennis Felber ,defe,1,2,23
+Emanuell Weissenberger ,emwe,1,2,31
+Hannes Münzer,hamu,1,2,25
+Jan Hoffmann ,jaho,1,2,33
+Lukas Baltruschat,luba,1,2,30
+Mohamed Aidi,moai,1,2,38
+Moritz Krämer,mokr,1,2,28
+Patrick Niebauer,pani,1,2,37
+Philipp Krause,phkr,1,2,28
+Stas Kozlovich,stko,1,2,30
+Steffen Vogeno,stvo,1,2,29
+Tim Dinius,tidi,1,2,32
+Tim Jessen,tije,1,2,26
+Tom Fröhlich,tofr,1,2,26
+Umut Tekin,umte,1,2,27
+Yannik Syperek,yasy,1,2,29
+Jennifer Saro,jesa,1,1,28
+Adrian Alian,adal,1,2,28
+Alexander Runow,alru,1,2,28
+André Kohli,anko,1,2,31
+Baro Barev ,baba,1,2,25
+David Nawaz ,dana,1,2,26
+Fynn Kunz,fyku,1,2,26
+Gianluca Rossitto,giro,1,2,28
+Jesaia ,jesai,1,2,28
+Jesper Hansen,jeha,1,2,25
+Julian Plum,jupl,1,2,39
+Kaan Aktas,kaak,1,2,27
+Kinan Wahbeh,kiwa,1,2,28
+Mike Featherstone,mife,1,2,28
+Oguzhan Gencel,ogge,1,2,28
+Oliver Slawik ,olsl,1,2,28
+Pedro Gomes ,pego,1,2,32
+Thomas Dinh Van,thva,1,2,30
+Tim Müller,timu,1,2,32
+Yannik Riedel,yari,1,2,30
+Stella Stegmann,stst,1,1,27
+Aaron,aaro,1,2,31
+Bennet,benn,1,2,27
+Brian,bria,1,2,24
+Devin,devi,1,2,29
+Erik,erik,1,2,31
+Fabian,fabi,1,2,33
+Ferry,ferr,1,2,30
+Jan,jan,1,2,34
+Lukasz,luka,1,2,29
+Markus,marku,1,2,32
+Martin,martin,1,2,35
+Maximilian,maxi,1,2,33
+Musty,must,1,2,31
+Peter,pete,1,2,36
+Smith,smit,1,2,23
+Akosua,akos,1,1,21
+Aysun,aysu,1,1,24
+Emma,emma,1,1,22
+Leila,leil,1,1,27
+Luna,luna,1,1,34
+Hochzeit auf den Ersten Blick,hadeb,3,na,na
+Hochzeit auf den Ersten Blick 2019,hadeb_2019,2,na,na
+Hochzeit auf den Ersten Blick 2020,hadeb_2020,2,na,na
+Hochzeit auf den Ersten Blick 2021,hadeb_2021,2,na,na
+Hochzeit auf den Ersten Blick 2022,hadeb_2022,2,na,na
+Hochzeit auf den Ersten Blick 2023,hadeb_2023,2,na,na
+Marcel,marcel,1,2,na
+Philipp,phil,1,2,na
+Alexander,alexan,1,2,na
+Christina,chris,1,1,na
+Cindy,cindy,1,1,na
+David,david,1,2,na
+Jessica,jess,1,1,na
+Marcel,marce,1,2,na
+Melissa,melis,1,1,na
+Nicole,nico,1,1,na
+Samantha,sama,1,1,na
+Serkan,serk,1,2,na
+Annika,anni,1,1,31
+Manuel Hadeb,manue,1,2,39
+Emily,emil,1,1,31
+Robert,robe,1,2,40
+Lisa,lisa1,1,1,34
+Michael,mich1,1,2,40
+Wiebke,wieb,1,1,57
+Norbert,norb,1,2,63
+Daniela,dani,1,1,34
+René,rene,1,2,32
+Ariana,aria,1,1,34
+Martin,mart,1,2,41
+Janina,janin,1,1,42
+Dennis,denn,1,2,43
+Anika,anik,1,1,33
+Juliane,julia,1,1,34
+Lisa,lisa2,1,1,29
+Manuela,manu,1,1,53
+Selia,selia,1,1,29
+Simone,simon,1,1,34
+David,david2,1,2,30
+Marcus,marc,1,2,37
+Mario,mario,1,2,39
+Michael,mich2,1,2,33
+Ralf,ralf,1,2,60
+Robert,rober,1,2,38
+Jaqueline,jaqu,1,1,28
+Natascha,nata,1,1,32
+Kinga,king,1,1,40
+Michaela,mich3,1,1,36
+Nadine,nadi,1,1,37
+Jana,jana,1,1,28
+Peter,peter,1,2,36
+Oliver,oliv,1,2,45
+Christoph,christ,1,2,31
+Dennis,denni,1,2,30
+Markus,markus1,1,2,34
+Morten,mort,1,2,43
+Oliver,olive,1,2,61
+Heiko,heik,1,2,47
+Robert,robert,1,2,36
+Kai,kai,1,2,32
+Jochen,joch,1,2,39
+Karsten,kars,1,2,52
+Bianca,bian,1,1,54
+Alexandra,alexand,1,1,40
+Marina,marin,1,1,30
+Marina,marina,1,1,29
+Michaela ,mich4,1,1,55
+Yasmin,yasm,1,1,32
+Bauer sucht Frau,bsf,3,na,na
+BSF Staffel 2024,bsf_2024,2,na,na
+Heiner,hein,1,2,70
+Saskia,saski,1,1,35
+Max,max,1,2,32
+Andre,andre,1,2,29
+Andreas,andr,1,2,31
+Heino,heino,1,2,50
+Jennifer,jenni,1,1,58
+Konrad,konr,1,2,61
+Manfred,manf,1,2,38
+marcel,marc1,1,2,29
+Martin,marti,1,2,36
+Marvin,marv,1,2,30
+Paul,paul,1,2,22
+Yannik,yann,1,2,22
+BSF Staffel 2023,bsf_2023,2,na,na
+Andre,andre1,1,2,34
+Christoph,christo,1,1,29
+Daniel,daniel,1,2,27
+Dietrich-Max-Helmut behr,dibe,1,2,71
+hannes,hann,1,2,25
+hans,hans,1,2,66
+Patrick,patr,1,2,28
+Siegfired,sieg,1,2,65
+Stefanie,stefa,1,1,42
+Steffen,steff,1,2,43
+Stephan,steph,1,2,32
+Carolin,caro,1,1,28
+BSF Staffel 2022,bsf_2022,2,na,na
+Loretta gruber,logr,1,1,34
+Michael,mich5,1,2,39
+Theo,theo,1,2,60
+Christian,christi,1,2,41
+dennis,dennis,1,2,30
+Erik,erik1,1,2,32
+Gottfried,Gott,1,2,65
+Jörg,Jörg,1,2,50
+Maik,Maik,1,2,32
+Mario,Mario1,1,2,46
+Martin,Marti1,1,2,58
+Max,Max1,1,2,28
+Michael,Mich6,1,2,53
+Steffen,steffe,1,2,45
+Tade,tade,1,2,27
+Ulf,ulf,1,2,33
+Arne,arne,1,2,32
+BSF Staffel 2021,bsf_2021,2,na,na
+Björn,björ,1,2,35
+Dirk,dirk,1,2,27
+Enno,enno,1,2,28
+Hubert,hube,1,2,42
+Lara,lara,1,1,29
+Mathias,math1,1,2,36
+Mathias,math2,1,2,35
+Olaf,olaf,1,2,62
+Peter,peter1,1,2,28
+Torsten,tors,1,2,55
+Mike,mike3,1,2,44
+Nils,nils,1,2,36
+BSF Staffel 2020,bsf_2020,2,na,na
+Patrick,patr,1,1,28
+Andy,andy,1,1,47
+Denise,deni1,1,2,35
+Rüdiger,rued,1,1,57
+Simon,simo,1,1,30
+Thomas,thom,1,1,46
+Leif,leif,1,1,35
+Lutz,lutz,1,1,55
+Peter,peter2,1,1,38
+Thomas U.,thou,1,1,42
+Love Island 2020,lois_2020,2,na,na
+Aurelia Lamprecht,aula,1,1,27
+sandra van der heide,sava,1,1,25
+geraldine grunow,gegr,1,1,28
+Melina Hoch,meho,1,1,27
+Pia Jung,piju,1,1,29
+nathalia Miranda,nami,1,1,31
+Luca Wetzel,luwe,1,2,28
+Henrik Stoltenberg,hest,1,2,27
+Tim Kühnel,tiku,1,2,27
+Murat Uruan,muur,1,2,32
+Nele Burgel,nebu,1,1,28
+Mila Cipa,mici,1,1,27
+jolene jaeger,jojae,1,1,27
+giulio ehses,gieh,1,2,24
+Max bartel ,maba,1,2,30
+laura ma,lauma,1,1,24
+melanie molicnio,memo,1,1,29
+julia schwab ,jusc,1,2,27
+kevin zotter ,kezo,1,2,31
+melvin pelzer,mepe,1,2,30
+chiara merkl,chme,1,1,27
+Love Island 2021,lois_2021,2,na,na
+Andrina santoro,ansa,1,1,31
+Bianca Balintffy,biba,1,1,26
+Fabiola,fabio,1,1,29
+Greta Engelfried,gren,1,1,25
+Isabel Kremer,iskr,1,1,25
+Julia Wurzinger,juwu,1,1,30
+Lisa gaul,liga,1,1,26
+Melina Hoch,meho,1,1,28
+Nicole Morena,nimo,1,1,32
+Sina,sina,1,1,26
+Adriano Monaco,admo,1,2,29
+Jannik,jann,1,2,28
+Kaan,kaan,1,2,25
+Maurice dziwak,madz,1,2,27
+Nico Müller,nimu,1,2,28
+Paco herb,pahe,1,2,28
+Robin Widmann,rowi,1,2,26
+Tim Kühnel,tiku,1,2,26
+Yasin Cilingir,yaci,1,2,27
+Love Island 2022,lois_2022,2,na,na
+Adriano salvaggio,adsa,1,2,29
+Bocc baybora,boba,1,2,25
+Bucci Yok,buyo,1,2,33
+carina aki,caak,1,1,25
+Chris jebens,chje,1,2,29
+Cindy,cind,1,1,27
+Daniel martos,dama,1,2,33
+Inna persiki,inpe,1,1,27
+Jendrik buescher,jebu,1,2,23
+Jennifer,jennif,1,1,25
+Jessica Delion,jede,1,1,24
+Lara barbosa,labar,1,1,29
+Leon hettwer,lehe,1,2,27
+ leonie weiß ,lewe,1,1,29
+Mahdi amegashi,maam,1,2,25
+Mark bruns,mabru,1,2,25
+Nico müller,nimu,1,2,28
+Sandrine schlotterbeck,sasc,1,1,30
+Sanne hagen,saha,1,1,27
+Tom schoppa,tosc,1,2,31
+vanessa leani,valea,1,1,28
+Vanushka Klein,vakl,1,1,24
+Love Island 2023,lois_2023,2,na,na
+Fabi,fabi1,1,2,26
+leon ziegler,lezi,1,2,26
+Hannes mörl,hamo,1,2,25
+Ray,ray,1,2,27
+Luca,luca1,1,2,28
+Daniel,daniel2,1,2,32
+derryl,derr,1,2,31
+Robert,robert1,1,2,31
+Angelo zoppo,anzo,1,2,35
+Leandro,lean,1,2,24
+Deniz,deni,1,2,26
+Evi Maria,evma,1,1,29
+laura lettgen,lale,1,1,24
+Alessandra wichert,alwic,1,1,27
+Jenny,jenny,1,1,22
+Vanessa Nwattu,vanw,1,1,22
+Celine,celi,1,1,25
+jeanine,jean,1,1,28
+Lucie,luci,1,1,24
+Vanessa Wende,vawe,1,1,25
+Miriam Rathje,mira,1,1,24
+Love Island 2024,lois_2024,2,na,na
+Sandra van der heide,sahe,1,1,25
+Tracy candela,trca,1,1,27
+Aurelia Lamprecht,aula,1,1,24
+Yeliz Koc,yeko,1,1,33
+Luigi Birofio (gigi),lubi,1,2,26
+Wilson Coenen,wico,1,2,28
+Patrick fabian,pafa,1,2,30
+Chiara fröhlich,chfr,1,1,29
+Kymani yade,kyya,1,1,27
+Spohie Imelmann,spim,1,1,31
+Viktoria krause,vikr,1,1,29
+Marcellino kremers,makr,1,2,28
+leandro fünfsinn,lefu,1,2,25
+Tobias wegener,towe,1,2,23
+Yasin Cilingir,yaci,1,2,30
+Alicia Pinheiro,alpi,1,1,26
+RTL,rtl,4,na,na
