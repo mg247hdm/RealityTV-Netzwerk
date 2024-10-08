@@ -1,4 +1,4 @@
-character,id,type,sex,age
+character,name,type,sex,age
 Netflix,netflix,4,na,na
 THTH,thth,3,na,na
 THTH 2023,thth_2023,2,na,na
