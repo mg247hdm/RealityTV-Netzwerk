@@ -1,4 +1,4 @@
-from,to,relation ,year
+from,to,relation,year
 netflix,thth,4,0
 thth,thth_2023,2,2023
 thth_2023,sadi,1,2023
