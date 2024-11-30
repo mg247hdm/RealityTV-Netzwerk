@@ -1,6 +1,6 @@
 Vertexattribute:,
 character,ganzer Name von Person/Staffel/Sendung/Sendergruppe
-id,festgelegte Abkürzung (bei Person Initialen oder Code)
+id,festgelegte Abkürzung (Initialen oder Code)
 type,"1 = Person, 2 = Staffel, 3 = Sendung , 4= Sendergruppe"
 sex,"1 = female, 2 = male"
 age,Alter in Jahren (jetziger Stand)
