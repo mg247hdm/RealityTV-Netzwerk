@@ -1,5 +1,5 @@
 from,to,relation,year
-netflix,thth,4,99
+netflix,thth,3,99
 thth,thth_2023,2,2023
 thth_2023,sadi,1,2023
 thth_2023,maca,1,2023
@@ -15,7 +15,7 @@ thth_2023,fafa,1,2023
 thth_2023,lamu,1,2023
 thth_2023,emhu,1,2023
 thth_2023,tokl,1,2023
-pro7_sat1,tbatn,4,99
+pro7_sat1,tbatn,3,99
 tbatn,tbatn_2024,2,2024
 tbatn_2024,kiha,1,2024
 tbatn_2024,savas,1,2024
