@@ -1,0 +1,420 @@
+---
+title: "RealityTV Netzwerk Arbeitsdokument"
+author: "Laura Böhm; Mika Gmelich; Clarissa Krauß, Deborah Herberg"
+date: "2024-06-28"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(igraph)
+library(tidygraph)
+library(tidyverse)
+library(manynet)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r Datensatz einlesen}
+
+# Edgelist einlesen
+el <- read.csv("https://raw.githubusercontent.com/mg247hdm/RealityTV-Netzwerk/refs/heads/main/edgelist.csv", header=T, as.is=T, sep = ",")
+
+# Nodelist einlesen
+nl <- read.csv("https://raw.githubusercontent.com/mg247hdm/RealityTV-Netzwerk/refs/heads/main/nodelist.csv", header=T, as.is=T, sep = ",")
+
+n <- tbl_graph(nodes = nl, edges = el, node_key = "id", directed = FALSE) # n als tabellarisches Objekt anlegen
+
+```
+
+```{r Visualisierung Gesamtnetzwerk n, fig.height=9, fig.width=16}
+
+# Farben für die Typen festlegen
+
+node_types <- V(n)$type # Nach Attribut 'type' der Knoten differenzieren
+type_colors <- c("red", "blue", "green", "orange") # Farben pro Typ
+vertex_colors <- type_colors[node_types] # Farben den Typen zuweisen
+
+# Größen für die Typen festlegen 
+
+type_sizes <- c(3, 4, 5, 8)  # Größen für die jeweiligen Types angeben
+vertex_sizes <- type_sizes[node_types] # Größen den jeweiligen Types zuweisen
+
+layout_fr <- layout_with_fr(n) # Visualisierung entzerren
+
+plot(n,
+  asp = 0,
+  layout= layout_fr,
+  vertex.label = V(n)$character,
+  vertex.size = vertex_sizes,
+  vertex.label.cex = 0.4,
+   vertex.color = vertex_colors,
+  edge.color = "black",
+  edge.width = 0.2,
+  main="Reality TV Gesamtnetzwerk",
+  sub= "Sendergruppen - Sendungen - Staffeln - Teilnehmer"
+     )
+legend("topright", 
+       legend = c("Teilnehmer", "Staffeln", "Sendungen", "Sendergruppen"), # Beschriftung
+       col = type_colors,             # Farben aus der Farbzuweisung
+       pch = 21,                      # Symboltyp für die Punkte
+       pt.bg = type_colors,           # Hintergrundfarbe der Symbole
+       bty = "n",                     # Kein Rahmen um die Legende
+       cex = 0.8)                     # Größe des Legendentext
+```
+
+```{r Egonetzwerke der Sendergruppen}
+egonetzwerke <- n %>% # Gesamtnetzwerk in Egonetzwerke teilen
+	to_egos()
+
+names(egonetzwerke) <- V(n)$id # Namen der Egonetzwerke mit denen der id's angleichen
+
+ego_rtl <- egonetzwerke$"rtl"
+ego_pro7_sat1 <- egonetzwerke$"pro7_sat1"
+ego_netflix <- egonetzwerke$"netflix"
+ego_paramount_plus <- egonetzwerke$"paramount_plus"
+```
+
+```{r Visualisierung der Sendergruppen,  fig.width=36, fig.height=24}
+
+par(mfrow = c(2, 2)) # ermöglicht Darstellung von 4 Netzwerken in einem Raster
+
+set.seed = 123 # ermöglicht stabile Wiederholung
+
+# Visualisierung 1: RTL-Gruppe
+plot(ego_rtl,
+  asp = 0,
+  layout = layout_with_lgl,
+  vertex.label = V(ego_rtl)$id,
+  vertex.size = 7,
+  vertex.label.cex = 0.4,
+  vertex.color = "orange",
+  edge.color = "black",
+  edge.width = 0.2,
+  main = "RTL-Gruppe"
+)
+
+# Visualisierung 2: Pro7 und Sat1
+plot(ego_pro7_sat1,
+  asp = 0,
+  layout = layout_with_lgl,
+  vertex.label = V(ego_pro7_sat1)$id,
+  vertex.size = 7,
+  vertex.label.cex = 0.4,
+  vertex.color = "blue",
+  edge.color = "black",
+  edge.width = 0.2,
+  main = "Pro7 und Sat1"
+)
+
+# Visualisierung 3: Paramount+
+plot(ego_paramount_plus,
+  asp = 0,
+  layout = layout_with_lgl,
+  vertex.label = V(ego_paramount_plus)$id,
+  vertex.size = 7,
+  vertex.label.cex = 0.4,
+  vertex.color = "yellow",
+  edge.color = "black",
+  edge.width = 0.2,
+  main = "Paramount+"
+)
+
+# Visualisierung 4: Netflix
+plot(ego_netflix,
+  asp = 0,
+  layout = layout_with_lgl,
+  vertex.label = V(ego_netflix)$id,
+  vertex.size = 7,
+  vertex.label.cex = 0.4,
+  vertex.color = "red",
+  edge.color = "black",
+  edge.width = 0.2,
+  main = "Netflix"
+)
+
+# Rückkehr zur Standard-Einstellung für die Plot-Anordnung
+par(mfrow = c(1, 1))
+```
+
+```{r Teilnetzwerk Stammgaeste erstellen}
+
+#Das Teilnetzwerk Stammgäste umfasst alle Knoten, die einen Degree-Wert von >1 haben
+
+stammgaeste <- n %>%
+  activate(nodes) %>% # Nur Bezug auf Knoten
+  mutate(degree = centrality_degree(mode = "all")) %>%  # Berechne den Degree-Wert der Knoten
+  filter(degree > 1) # Filtere die Knoten, die mehr als 2 Verbindungen haben
+
+print(stammgaeste)
+```
+
+```{r Visualisierung Stammgäste, fig.height=9, fig.width=16}
+
+# Farben für die Typen festlegen
+
+node_types <- V(stammgaeste)$type # Nach Attribut 'type' der Knoten differenzieren
+type_colors <- c("red", "blue", "green", "orange") # Farben pro Typ
+vertex_colors <- type_colors[node_types] # Farben den Typen zuweisen
+
+# Größen für die Typen festlegen 
+
+type_sizes <- c(3, 4, 5, 8)  # Größen für die jeweiligen Types angeben
+vertex_sizes <- type_sizes[node_types] # Größen den jeweiligen Types zuweisen
+
+layout_fr <- layout_with_fr(stammgaeste) # Visualisierung entzerren
+
+plot(stammgaeste,
+  asp = 0,
+  layout= layout_fr,
+  vertex.label = V(stammgaeste)$character,
+  vertex.size = vertex_sizes,
+  vertex.label.cex = 0.4,
+   vertex.color = vertex_colors,
+  edge.color = "black",
+  edge.width = 0.2,
+  main="Stammgaeste",
+  sub= "Nur Teilnehmer, die in mehr als einer Sendung waren"
+     )
+legend("topright", 
+       legend = c("Teilnehmer", "Staffeln", "Sendungen", "Sendergruppen"), # Beschriftung
+       col = type_colors,             # Farben aus der Farbzuweisung
+       pch = 21,                      # Symboltyp für die Punkte
+       pt.bg = type_colors,           # Hintergrundfarbe der Symbole
+       bty = "n",                     # Kein Rahmen um die Legende
+       cex = 0.8)                     # Größe der Legendentext
+```
+
+```{r Teilnetzwerk Stammgäste auf Menschen/Teilnehmer beschränken}
+
+#Das Teilnetzwerk Stammgäste wird auf Knoten des Typen 1 (Menschen/Teilnehmende) beschränkt
+
+stammgaeste_people <- stammgaeste %>%
+  activate(nodes) %>% # Nur Bezug auf Knoten
+  filter(type == 1) # Filtere die Knoten nach Typ 1
+
+stammgaeste_people
+
+as_tibble(stammgaeste_people) #Tabellarisch aufrufen
+```
+
+```{r Prozentualer Anteil an Wechslern}
+
+# Händische Auszählung der Wechsler hat ergeben, dass 18 der 51 Stammgäste Wechsler sind
+
+prozentsatz_wechsler <- (18/51)*100 #Ermittlung welcher Prozentsatz der Teilnehmenden die Sendergruppe gewechselt hat
+round(prozentsatz_wechsler, digits = 2) #Gerundet auf zwei Nachkommastellen
+
+```
+
+```{r Egonetzwerk Walentina Doronina, fig.height=18, fig.width=32}
+
+ego_wado <- egonetzwerke$"wado" # Egonetzwerk von Walentina Doronina aufrufen
+
+# Farben für die Typen festlegen
+
+node_types <- V(ego_wado)$type # Nach Attribut 'type' der Knoten differenzieren
+type_colors <- c("red", "blue", "green", "orange") # Farben pro Typ
+vertex_colors <- type_colors[node_types] # Farben den Typen zuweisen
+
+# Größen für die Typen festlegen 
+
+type_sizes <- c(3, 4, 5, 8)  # Größen für die jeweiligen Types angeben
+vertex_sizes <- type_sizes[node_types] # Größen den jeweiligen Types zuweisen
+
+layout_fr <- layout_with_fr(ego_wado) # Visualisierung entzerren
+
+plot(ego_wado,
+  asp = 0,
+  layout= layout_fr,
+  vertex.label = V(ego_wado)$character,
+  vertex.size = vertex_sizes*2,
+  vertex.label.cex = 1.2,
+  vertex.color = vertex_colors,
+  edge.color = "black",
+  edge.width = 0.4,
+  main="Egonetzwerk Walentina Doronina"
+  )
+```
+
+```{r weitere Egonetzwerke, fig.height=9, fig.width=16}
+# Es gibt drei weitere Knoten mit drei Verbindungen. Für diese erstellen wir Egonetzwerke.
+
+ego_jost <- egonetzwerke$"jost" 
+ego_jefi <- egonetzwerke$"jefi"
+ego_lubi <- egonetzwerke$"lubi"
+
+```
+
+```{r Visualisierungen, fig.height=80, fig.width=45 }
+par(mfrow = c(3, 1)) # ermöglicht Darstellung von 3 Netzwerken übereinander
+
+set.seed = 123 # ermöglicht stabile Wiederholung
+
+#Egonetzwerk für Jonathan Steinig visualisieren
+# Farben für die Typen festlegen
+
+node_types <- V(ego_jost)$type # Nach Attribut 'type' der Knoten differenzieren
+type_colors <- c("red", "blue", "green", "orange") # Farben pro Typ
+vertex_colors <- type_colors[node_types] # Farben den Typen zuweisen
+
+# Größen für die Typen festlegen 
+
+type_sizes <- c(3, 4, 5, 8)  # Größen für die jeweiligen Types angeben
+vertex_sizes <- type_sizes[node_types] # Größen den jeweiligen Types zuweisen
+
+layout_fr <- layout_with_fr(ego_jost) # Visualisierung entzerren
+
+plot(ego_jost,
+  asp = 0,
+  layout= layout_fr,
+  vertex.label = V(ego_jost)$character,
+  vertex.size = vertex_sizes*2,
+  vertex.label.cex = 3,
+   vertex.color = vertex_colors,
+  edge.color = "black",
+  edge.width = 1,
+  main="Egonetzwerk Jonathan Steinig"
+  )
+
+#Egonetzwerk für Jessica Fiorini visualisieren
+# Farben für die Typen festlegen
+
+node_types <- V(ego_jefi)$type # Nach Attribut 'type' der Knoten differenzieren
+type_colors <- c("red", "blue", "green", "orange") # Farben pro Typ
+vertex_colors <- type_colors[node_types] # Farben den Typen zuweisen
+
+# Größen für die Typen festlegen 
+
+type_sizes <- c(3, 4, 5, 8)  # Größen für die jeweiligen Types angeben
+vertex_sizes <- type_sizes[node_types] # Größen den jeweiligen Types zuweisen
+
+layout_fr <- layout_with_fr(ego_jefi) # Visualisierung entzerren
+
+plot(ego_jefi,
+  asp = 0,
+  layout= layout_fr,
+  vertex.label = V(ego_jefi)$character,
+  vertex.size = vertex_sizes*2,
+  vertex.label.cex = 3,
+   vertex.color = vertex_colors,
+  edge.color = "black",
+  edge.width = 1,
+  main="Egonetzwerk Jessica Fiorini"
+  )
+
+#Egonetzwerk für Luigi Birofio visualisieren
+# Farben für die Typen festlegen
+
+node_types <- V(ego_lubi)$type # Nach Attribut 'type' der Knoten differenzieren
+type_colors <- c("red", "blue", "green", "orange") # Farben pro Typ
+vertex_colors <- type_colors[node_types] # Farben den Typen zuweisen
+
+# Größen für die Typen festlegen 
+
+type_sizes <- c(3, 4, 5, 8)  # Größen für die jeweiligen Types angeben
+vertex_sizes <- type_sizes[node_types] # Größen den jeweiligen Types zuweisen
+
+layout_fr <- layout_with_fr(ego_lubi) # Visualisierung entzerren
+
+plot(ego_lubi,
+  asp = 0,
+  layout= layout_fr,
+  vertex.label = V(ego_lubi)$character,
+  vertex.size = vertex_sizes*2,
+  vertex.label.cex = 3,
+   vertex.color = vertex_colors,
+  edge.color = "black",
+  edge.width = 1,
+  main="Egonetzwerk Luigi Birofio"
+  )
+par(mfrow = c(1, 1))
+```
+
+```{r Netzwerk Analyse komplettes Netzwerk}
+# Art des Netzwerks?
+is_bipartite(n)
+
+# Wieviele Komponenten?
+count_components(n)
+
+#Dichte des Netzwerks?
+edge_density(n)
+
+#Dichte des Netzwerks als Prozentwert?
+s_dichte <- edge_density(n)*100
+s_dichte
+
+# Durchschnittliche Pfaddistanz ?
+s_pfaddistanz <- mean_distance(n)
+s_pfaddistanz
+
+
+# Reziprozität?
+s_rezi <- reciprocity(n)*100 # *100 wegen Prozentwert 
+s_rezi 
+
+# Richtung?
+s_dir <- is_directed(n)
+s_dir
+
+
+```
+
+```{r Netzwerkanalyse ganzes Netzwerk als Tabelle}
+
+n_overview  <- tibble(
+  two_mode = is_bipartite(n), #Auflistung der Netzwerkart
+  Komponenten = count_components(n), #Auflistung der Komponentenzahl
+  gerichtet = s_dir, #Ist das Netzwerk gerichtet oder nicht?
+  reziprok = s_rezi, #Auflistung der Reziprozität
+  Dichte = s_dichte, #Auflistung der Dichte
+  Pfaddistanz = s_pfaddistanz) #Auflistung der durchschnittlichen Pfaddistanz
+n_overview
+
+
+```
+
+```{r Zentralitätsmaße ganzes Netzwerk n}
+
+# Höchster Degree (Welcher Knoten hat die meisten Kanten?)
+s_deg <- which.max(degree(n, mode="all"))
+s_deg
+
+# Kleinster Degree Wert (Welcher Knoten hat die wenigsten Kanten?)
+which.min(degree(n,mode="all"))
+
+# Indegree (Welcher Knoten hat den höchsten Indegree?) 
+s_deg_in <- degree(n, mode="in")
+s_deg_in
+
+# Outdegree (Welcher Knoten hat den höchsten Outdegree?)
+s_deg_out <- degree(n, mode="out")
+s_deg_out
+
+# Betweenness (Wie gut verbindet der Knoten andere?)
+s_betw <- betweenness(n, normalized=TRUE)
+s_betw
+
+# Closeness (Sind die Alteri gut vernetzt?)
+s_clos <- closeness(n, normalized=TRUE)
+s_clos
+
+
+```
+
+```{r Zentralitätsmaße von ganzes Netzwerk n als übersichtliche Tabelle}
+
+n_zentr <- tibble(
+  id = V(n)$id, # nimmt die Werte aus der Spalte id der nodelist
+  name = V(n)$name_first, # nimmt die Werte aus der Spalte name_first der Nodelist
+  degree = s_deg, #Auflistung des Degree-Werte
+  indegree = s_deg_in, #Auflistung des Indegree-Wertes
+  outdegree = s_deg_out, #Auflistung des Outdegree-Wertes
+  closeness = s_clos, #Auflistung der Closeness
+  betweenness = s_betw) #Auflistung der Betweeness
+n_zentr
+
+```
